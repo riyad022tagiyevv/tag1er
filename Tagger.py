@@ -68,6 +68,16 @@ async def handler(event):
                    
 	
 	
+	
+	
+@clienr.on(events.ChatAction)
+async def handler(event):
+    if event.user_joined:
+        await event.reply(f"salam")
+	
+	
+	
+	
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
