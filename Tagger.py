@@ -72,7 +72,7 @@ async def handler(event):
    
 	
 	
-@client.on(events.NewMessage(pattern="^/zag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/zad ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   rxyzdev_tagTot[event.chat_id] = 0
