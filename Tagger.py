@@ -15,11 +15,6 @@ api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
-app = ent("GUNC",
-             api_id=api_id,
-             api_hash=api_hash,
-             bot_token=bot_token
-             )
 
 
 anlik_calisan = []
@@ -573,18 +568,7 @@ async def mentionalladmin(event):
  		
 		
 		
-@app.on_message(filters.command("id"))
-async def _id(_, message: Message):
-    msg = message.reply_to_message or message
-    out_str = "**User İnfo:**\n"
-    out_str += f" 💬 __Grup ID__ : `{(msg.forward_from_chat or msg.chat).id}`\n"
-    out_str += f" 👤__Yanıtlanan Kullanıcı Adı__ : {msg.from_user.first_name}\n"
-    out_str += f" 💬 __Mesaj ID__ : `{msg.forward_from_message_id}`\n"
-    if msg.from_user:
-        out_str += f" 🙋🏻‍♂️ __Yanıtlanan Kullanıcı ID__ : `{msg.from_user.id}`\n"
- 
-    await message.reply(out_str)		
-		
+
 		
 		
 		
