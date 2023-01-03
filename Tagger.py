@@ -566,7 +566,7 @@ async def mentionalladmin(event):
         usrtxt = ""
  		
 		
-@client.on_message(filters.command("id"))
+@client.on(events.NewMessage(pattern="^/id$"))
 async def _id(_, message: Message):
     msg = message.reply_to_message or message
     out_str = "**User İnfo:**\n"
