@@ -65,9 +65,18 @@ async def handler(event):
 		      [Button.inline("⚙ Əsas Meynu", data="start")],
 		    ),
                     link_preview=False)
-                   
+                 
 	
 	
+@app.on_message(filters.command("ping"))
+async def pingy(client, message):
+    start = datetime.now()
+    hmm = await message.reply("Pong!")
+    end = datetime.now()
+    ms = (end - start).microseconds / 1000
+    await hmm.edit(
+        f"█▀█ █▀█ █▄░█ █▀▀ █ \n█▀▀ █▄█ █░▀█ █▄█ ▄\n**Ping: {round(ms)}**")
+    	
 	
 	
 	
