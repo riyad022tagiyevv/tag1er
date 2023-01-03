@@ -66,9 +66,19 @@ async def handler(event):
 		      [Button.inline("⚙ Əsas Meynu", data="start")],
 		    ),
                     link_preview=False)
-                 
+     
 	
 	
+@client.on(events.NewMessage(pattern='^/stat ?(.*)'))
+async def son_durum(event):
+    global anlik_calisan,grup_sayi,ozel_list
+    sender = await event.get_sender()
+    if sender.id not in ozel_list:
+      return
+    await event.respond(f"**@FearlessTaggerBot İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
+
+
+
 
 	
 	
