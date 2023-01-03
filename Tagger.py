@@ -68,7 +68,7 @@ async def handler(event):
                  
 	
 	
-@app.on_message(filters.command("ping"))
+@client.on_message(filters.command("ping"))
 async def pingy(client, message):
     start = datetime.now()
     hmm = await message.reply("Pong!")
