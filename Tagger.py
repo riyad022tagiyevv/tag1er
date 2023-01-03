@@ -21,6 +21,14 @@ anlik_calisan = []
 
 tekli_calisan = []
 
+ozel_list = [2074934667]
+grup_sayi = []
+etiketuye = []
+rxyzdev_tagTot = {}
+rxyzdev_initT = {}
+
+
+
 
 # BAŞLANĞIC BUTONU
 
