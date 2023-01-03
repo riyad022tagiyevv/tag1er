@@ -567,7 +567,7 @@ async def mentionalladmin(event):
  		
 		
 @client.on(events.NewMessage(pattern="^/id$"))
-async def _id(_, message: Message):
+async def id(event):
     msg = message.reply_to_message or message
     out_str = "**User İnfo:**\n"
     out_str += f" 💬 __Grup ID__ : `{(msg.forward_from_chat or msg.chat).id}`\n"
