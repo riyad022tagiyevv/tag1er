@@ -29,7 +29,7 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun",
+  await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm.\nℹ Mənim Qruplarda Asan Və Sürətli İşləyə Bilməyim Üçün Mənə Qrupunuzda Sadə Adminlik Vermənizi Rica Edirem.\n✔ Əmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun",
                     buttons=(
                    
 		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
@@ -42,7 +42,7 @@ async def start(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
-    await event.edit(f"**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun", buttons=(
+    await event.edit(f"**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm.\nℹ Mənim Qruplarda Asan Və Sürətli İşləyə Bilməyim Üçün Mənə Qrupunuzda Sadə Adminlik Vermənizi Rica Edirem\n✔ Əmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun", buttons=(
                       
                       [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
@@ -64,7 +64,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="info"))
 async def handler(event):
-    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz\n📢 ADMİNLİK MÜTLƏQDİ**", buttons=(      
 	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
 		      [Button.inline("⚙ Əsas Meynu", data="start")],
 		    ),
