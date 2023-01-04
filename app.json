@@ -16,14 +16,7 @@
       "value": ""
     }
   },
-  "BOT_ID": {
-      "description": "Botun ID-si yazın",
-      "value": "5394785524"
-    },
-    "OWNER_ID": {
-      "description": "Öz ID-ni yazın",
-      "value": "571698989"
-    },
+
   "buildpacks": [{
     "url": "https://github.com/heroku/heroku-buildpack-python.git"
   }]
